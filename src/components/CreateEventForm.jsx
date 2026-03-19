@@ -13,10 +13,19 @@ export default function CreateEventForm({ onCreateEvent }) {
         e.preventDefault();
         if (!form.title || !form.date || !form.capacity) return;
         setBusy(true);
-        await new Promise(r => setTimeout(r, 350));
-        onCreateEvent({ title: form.title, date: form.date, description: form.description, capacity: parseInt(form.capacity, 10), location: "TBD" });
-        setForm(EMPTY);
-        setBusy(false);
+        try {
+            await new Promise(r => setTimeout(r, 350));
+            await onCreateEvent({
+                title: form.title,
+                date: form.date,
+                description: form.description,
+                capacity: parseInt(form.capacity, 10),
+                location: "TBD"
+            });
+            setForm(EMPTY);
+        } finally {
+            setBusy(false);
+        }
     }
 
     const set = (k, v) => setForm(p => ({ ...p, [k]: v }));
@@ -57,7 +66,7 @@ export default function CreateEventForm({ onCreateEvent }) {
                     className="btn-primary w-full flex items-center justify-center gap-2 py-2.5"
                     style={busy ? { opacity: 0.7 } : {}}>
                     {busy
-                        ? <><span className="w-4 h-4 rounded-full border-2 border-white/30 border-t-white animate-spin" /> Publishing…</>
+                        ? <><span className="w-4 h-4 rounded-full border-2 border-white/30 border-t-white animate-spin" /> Publishing...</>
                         : <><Plus className="w-4 h-4" /> Publish Event</>
                     }
                 </button>
