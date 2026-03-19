@@ -51,3 +51,13 @@
 - Built live event table with update logic
 - Implemented delete event functionality
 - Designed responsive mobile dashboard
+
+### Sona Antony 
+
+Backend development and API creation
+
+Frontend–backend–database integration
+
+API testing and debugging
+
+Backend configuration and setup
