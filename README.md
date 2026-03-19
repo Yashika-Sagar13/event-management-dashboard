@@ -61,3 +61,16 @@ Frontend–backend–database integration
 API testing and debugging
 
 Backend configuration and setup
+
+
+###  Tapashya : Database Implementation (MongoDB)
+
+- Designed the backend database using **MongoDB** with **Mongoose** for schema modeling and validation.
+- Implemented core collections: **Users**, **Events**, and **Registrations** to support the event management workflow.
+- Defined structured schemas with validation rules to ensure consistent and reliable data storage.
+- Established relationships between collections using **ObjectId references** (e.g., user-to-event registrations).
+- Implemented registration logic allowing users to register for events through the `Registrations` collection.
+- Added **timestamps** to track creation and update history of database records.
+- Structured the backend database layer with a modular folder organization (`config`, `models`).
+- Enabled scalable data storage suitable for handling multiple events and participants.
+- Integrated the database with backend APIs to support event creation, user management, and event registrations.
