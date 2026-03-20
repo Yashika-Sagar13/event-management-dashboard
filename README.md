@@ -52,13 +52,15 @@
 - Implemented delete event functionality
 - Designed responsive mobile dashboard
 
-### Sona Antony 
+### Sona Antony - Backend Development, API Design and Frontend–Database Integration
 
-- Backend development and API creation
-- Frontend–backend–database integration
-- API testing and debugging
-- Backend configuration and setup
-
+- Developed the backend for the Event Management Dashboard, handling core application logic and server-side functionality
+- Designed and implemented RESTful APIs to manage event data and user interactions
+- Integrated the backend with the frontend to enable seamless data flow between UI and server
+- Connected and managed interactions with the database, ensuring efficient data storage and retrieval
+- Handled API testing and debugging to ensure reliable communication between frontend and backend
+- Managed environment configuration and backend dependencies
+- Resolved integration issues across backend, frontend, and database layers
 
 ###  Tapashya : Database Implementation (MongoDB)
 
