@@ -54,13 +54,10 @@
 
 ### Sona Antony 
 
-Backend development and API creation
-
-Frontend–backend–database integration
-
-API testing and debugging
-
-Backend configuration and setup
+- Backend development and API creation
+- Frontend–backend–database integration
+- API testing and debugging
+- Backend configuration and setup
 
 
 ###  Tapashya : Database Implementation (MongoDB)
