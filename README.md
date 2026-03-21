@@ -52,15 +52,29 @@
 - Implemented delete event functionality
 - Designed responsive mobile dashboard
 
-### Sona Antony & Tanu Raman - Backend Development, API Design and Frontend–Database Integration
+### Sona Antony - Backend Development - Core Infrastructure & Authentication
 
-- Developed the backend for the Event Management Dashboard, handling core application logic and server-side functionality
-- Designed and implemented RESTful APIs to manage event data and user interactions
-- Integrated the backend with the frontend to enable seamless data flow between UI and server
-- Connected and managed interactions with the database, ensuring efficient data storage and retrieval
-- Handled API testing and debugging to ensure reliable communication between frontend and backend
-- Managed environment configuration and backend dependencies
-- Resolved integration issues across backend, frontend, and database layers
+- Implemented Express.js server with Socket.IO for real-time updates
+- Set up MongoDB connection with error handling
+- Implemented JWT-based authentication system with 7-day token expiration
+- Created role-based authorization middleware (user, organizer, admin)
+- Built user registration with bcryptjs password hashing
+- Implemented login with secure password verification
+- Created authentication endpoints (register, login, get current user)
+- Set up CORS and request/response handling
+
+### Tanu Raman - Backend Development - Features & Business Logic
+
+- Implemented event management system (CRUD operations)
+- Built event filtering by category, search, and upcoming dates
+- Created user registration system with capacity checking
+- Implemented duplicate registration prevention
+- Built registration cancellation with count management
+- Implemented notification system with user notifications
+- Created organizer broadcast functionality
+- Integrated real-time Socket.IO updates for event registrations
+- Created database seeding script with demo data
+
 
 ###  Tapashya : Database Implementation (MongoDB)
 
